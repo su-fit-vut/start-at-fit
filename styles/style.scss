@@ -1,0 +1,171 @@
+$font: 'Dosis', sans-serif;
+$title-font: 'Montserrat', sans-serif;
+$su-orange: #ff5722;
+$su-black: #222222;
+$su-white: #fafafa;
+
+@mixin title($size) {
+    text-align: center;
+    font-family: $title-font;
+    font-size: $size;
+    letter-spacing: 1px;
+
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+/**
+GENERAL PAGE STYLES
+**/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+
+    background: $su-white;
+    color: $su-black;
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    li {
+        line-height: 2rem;
+
+        i {
+            margin-right: .75rem;
+        }
+    }
+
+    &.plain {
+        padding: 0;
+        li {
+            list-style: none;
+        }
+    }
+}
+
+/**
+HEADERS
+**/
+
+h1 {
+    @include title(3rem);
+}
+
+h2 {
+    @include title(2.3rem);
+}
+
+/**
+PAGE CONTENT
+**/
+
+.centering {
+    text-align: center;
+    margin: auto;
+}
+
+.section {
+    padding: 2rem 1rem;
+}
+
+
+.highlight {
+    background: $su-orange;
+    color: $su-white;
+}
+
+
+/*
+GALLERY
+*/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+    .photo {
+        padding: 1rem;
+    }
+
+    .column {
+        width: 100%;
+        flex: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+/**
+MEDIA AND RESPONSIVITY STUFF
+**/
+
+@media screen and (min-width: 760px) {
+
+    body {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    
+        .photo {
+            padding: 1rem;
+    
+            &:nth-of-type(odd) {
+                float: left;
+            }
+            &:nth-of-type(even) {
+                float: right;
+            }
+        }
+    
+        .column {
+            flex: 50%;
+            flex-wrap: wrap;
+            width: 50%;
+        }
+    }
+
+    .section {
+        padding: 5rem 2.5rem;
+        
+        * {
+            flex: 100%;
+        }
+    
+        .info {
+            ul {
+               display: flex;
+               font-size: 1.5rem;
+            }
+        };
+    
+        .inner {
+            width: 60%;
+            margin: auto;
+        }
+    }
+    
+}
