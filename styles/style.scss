@@ -3,6 +3,8 @@ $title-font: 'Montserrat', sans-serif;
 $su-orange: #ff5722;
 $su-black: #222222;
 $su-white: #fafafa;
+$less-annoying-orange: hsl(14, 90%, 57%);
+$shadow: adjust-color($color: $su-black, $alpha: -0.8);
 
 @mixin title($size) {
     text-align: center;
@@ -55,6 +57,10 @@ ul {
     }
 }
 
+.b {
+    font-weight: 600;
+}
+
 /**
 HEADERS
 **/
@@ -64,7 +70,7 @@ h1 {
 }
 
 h2 {
-    @include title(2.3rem);
+    @include title(2.1rem);
 }
 
 /**
@@ -82,8 +88,9 @@ PAGE CONTENT
 
 
 .highlight {
-    background: $su-orange;
+    background: $less-annoying-orange;
     color: $su-white;
+    text-shadow: 2px 2px 3px $shadow;
 }
 
 
@@ -118,11 +125,11 @@ MEDIA AND RESPONSIVITY STUFF
     }
 
     h1 {
-        font-size: 7rem;
+        font-size: 5.5rem;
     }
 
     h2 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .gallery {
@@ -149,7 +156,7 @@ MEDIA AND RESPONSIVITY STUFF
     }
 
     .section {
-        padding: 5rem 2.5rem;
+        padding: 4.5rem 2.5rem;
         
         * {
             flex: 100%;
@@ -163,7 +170,7 @@ MEDIA AND RESPONSIVITY STUFF
         };
     
         .inner {
-            width: 60%;
+            width: 65%;
             margin: auto;
         }
     }
