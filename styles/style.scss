@@ -1,10 +1,9 @@
 $font: 'Dosis', sans-serif;
-$title-font: 'Montserrat', sans-serif;
-$su-orange: #ff5722;
+$title-font: 'Tomorrow', sans-serif;
+$su-primary: hsl(14, 90%, 57%);
 $su-black: #222222;
 $su-white: #fafafa;
-$less-annoying-orange: hsl(14, 90%, 57%);
-$shadow: adjust-color($color: $su-black, $alpha: -0.8);
+$su-shadow: adjust-color($color: $su-black, $alpha: -0.8);
 
 @mixin title($size) {
     text-align: center;
@@ -15,6 +14,8 @@ $shadow: adjust-color($color: $su-black, $alpha: -0.8);
     padding-top: 0rem;
     padding-bottom: 1rem;
     margin: 0;
+
+    text-transform: uppercase;
 }
 
 /**
@@ -61,6 +62,53 @@ ul {
     font-weight: 600;
 }
 
+a {
+    color: inherit;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: 2px solid;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    &:hover, &:active {
+        opacity: 0.85;
+        cursor: pointer;
+    }
+
+    &:active {
+        box-shadow: 2px 2px 2px;
+
+        &#menuButton {
+            box-shadow: none;
+        }
+    }
+    
+}
+
+table {
+    td {
+        padding: 0.25rem 0.5rem;
+
+        &:first-of-type {
+            font-weight: 600;
+        }
+        &:nth-of-type(3) {
+            padding-left: .5rem;
+            &::before {
+                content: "[";
+            }
+            &::after {
+                content: "]";
+            }
+        }
+    }
+}
+
 /**
 HEADERS
 **/
@@ -73,9 +121,92 @@ h2 {
     @include title(2.1rem);
 }
 
+h3 {
+    @include title(1.5rem);
+}
+
+/**
+NAVIGATION
+**/
+
+nav {
+    background: $su-primary;
+    color: $su-black;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    height: 3.75rem;
+    padding: 1rem;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    z-index: 100;
+
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .logo {
+        font-weight: 600;
+        font-family: $title-font;
+        text-transform: uppercase;
+
+        svg {
+            fill: $su-black;
+            max-height: 100%;
+            width: auto;
+        }
+    }
+
+    button {
+        background: none;
+        border: none;
+        padding: 0;
+
+        i {
+            font-size: 1.5rem;
+            color: $su-black;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    ul {
+        background: $su-primary;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 3.75rem;
+        right: 0;
+        line-height: 200%;
+        font-family: $font;
+
+        li {
+            padding: 0 2rem;
+            text-align: center;
+        }
+    }
+}
+
 /**
 PAGE CONTENT
 **/
+
+header {
+    padding: 7.5rem 0 !important;
+}
+
+.top-margin {
+    margin-top: 3.75rem;
+}
 
 .centering {
     text-align: center;
@@ -84,13 +215,46 @@ PAGE CONTENT
 
 .section {
     padding: 2rem 1rem;
+
+    .program {
+        border-left: 3px solid;
+    }
+
+    .day {
+        padding: 1rem;
+
+        h3 {
+            text-align: initial;
+            position: relative;
+            padding-left: 5rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 5rem;
+                height: 3px;
+                border-top: 3px dashed;
+                top: 1rem;
+                left: -1rem;
+            }
+        }
+
+        ul, li {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
 }
 
-
 .highlight {
-    background: $less-annoying-orange;
+    background: $su-primary;
     color: $su-white;
-    text-shadow: 2px 2px 3px $shadow;
+    text-shadow: 2px 2px 3px $su-shadow;
+}
+
+#Program {
+    scroll-margin: 4.75rem;
 }
 
 
@@ -118,10 +282,11 @@ GALLERY
 MEDIA AND RESPONSIVITY STUFF
 **/
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 965px) {
 
     body {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
     }
 
     h1 {
@@ -130,6 +295,10 @@ MEDIA AND RESPONSIVITY STUFF
 
     h2 {
         font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
     }
 
     .gallery {
@@ -165,7 +334,6 @@ MEDIA AND RESPONSIVITY STUFF
         .info {
             ul {
                display: flex;
-               font-size: 1.5rem;
             }
         };
     
