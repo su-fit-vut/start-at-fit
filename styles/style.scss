@@ -109,6 +109,10 @@ table {
     }
 }
 
+.hidden {
+    display: none;
+}
+
 /**
 HEADERS
 **/
@@ -174,9 +178,7 @@ nav {
         }
     }
 
-    .hidden {
-        display: none;
-    }
+    
 
     ul {
         background: $su-primary;
@@ -192,6 +194,33 @@ nav {
         li {
             padding: 0 2rem;
             text-align: center;
+        }
+    }
+}
+
+#menu {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    background-color: $su-primary; 
+    overflow-x: hidden;
+    transition: 0.5s;
+    color: $su-white;
+    text-shadow: 2px 2px 3px $su-shadow;
+
+    .menu-content {
+        margin: auto;
+        margin-top: 10%;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.85;
         }
     }
 }

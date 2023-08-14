@@ -76,6 +76,10 @@ table td:nth-of-type(3)::after {
   content: "]";
 }
 
+.hidden {
+  display: none;
+}
+
 /**
 HEADERS
 **/
@@ -150,9 +154,6 @@ nav button i {
   font-size: 1.5rem;
   color: #222222;
 }
-nav .hidden {
-  display: none;
-}
 nav ul {
   background: hsl(14, 90%, 57%);
   list-style: none;
@@ -167,6 +168,30 @@ nav ul {
 nav ul li {
   padding: 0 2rem;
   text-align: center;
+}
+
+#menu {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background-color: hsl(14, 90%, 57%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: #fafafa;
+  text-shadow: 2px 2px 3px rgba(34, 34, 34, 0.2);
+}
+#menu .menu-content {
+  margin: auto;
+  margin-top: 10%;
+}
+#menu a {
+  text-decoration: none;
+}
+#menu a:hover {
+  opacity: 0.85;
 }
 
 /**
