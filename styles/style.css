@@ -40,7 +40,7 @@ a {
   color: inherit;
 }
 
-button {
+button, .button {
   background: none;
   color: inherit;
   border: 2px solid;
@@ -49,14 +49,14 @@ button {
   font-weight: 600;
   letter-spacing: 1px;
 }
-button:hover, button:active {
+button:hover, button:active, .button:hover, .button:active {
   opacity: 0.85;
   cursor: pointer;
 }
-button:active {
+button:active, .button:active {
   box-shadow: 2px 2px 2px;
 }
-button:active#menuButton {
+button:active#menuButton, .button:active#menuButton {
   box-shadow: none;
 }
 
@@ -121,7 +121,7 @@ NAVIGATION
 **/
 nav {
   background: hsl(14, 90%, 57%);
-  color: #222222;
+  color: #fafafa;
   display: flex;
   justify-content: space-between;
   height: 3.75rem;
@@ -141,7 +141,7 @@ nav .logo {
   text-transform: uppercase;
 }
 nav .logo svg {
-  fill: #222222;
+  fill: #fafafa;
   max-height: 100%;
   width: auto;
 }
@@ -152,7 +152,7 @@ nav button {
 }
 nav button i {
   font-size: 1.5rem;
-  color: #222222;
+  color: #fafafa;
 }
 nav ul {
   background: hsl(14, 90%, 57%);
@@ -178,14 +178,25 @@ nav ul li {
   top: 0;
   z-index: 50;
   background-color: hsl(14, 90%, 57%);
-  overflow-x: hidden;
   transition: 0.5s;
   color: #fafafa;
   text-shadow: 2px 2px 3px rgba(34, 34, 34, 0.2);
+  font-family: "Tomorrow", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  animation: slideMenu 0.5s ease-in-out;
+}
+#menu hr {
+  width: 40%;
+  margin: 1rem auto;
 }
 #menu .menu-content {
   margin: auto;
   margin-top: 10%;
+}
+#menu li {
+  padding: 0.5rem 0;
 }
 #menu a {
   text-decoration: none;
@@ -194,11 +205,25 @@ nav ul li {
   opacity: 0.85;
 }
 
+@keyframes slideMenu {
+  0% {
+    height: 0%;
+    opacity: 0;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+  }
+}
 /**
 PAGE CONTENT
 **/
 header {
   padding: 7.5rem 0 !important;
+}
+header .tagline {
+  font-size: 1.3rem;
+  margin-top: 2rem;
 }
 
 .top-margin {
@@ -303,7 +328,7 @@ MEDIA AND RESPONSIVITY STUFF
     width: 50%;
   }
   .section {
-    padding: 4.5rem 2.5rem;
+    padding: 3.5rem 2.5rem;
   }
   .section * {
     flex: 100%;
@@ -313,6 +338,7 @@ MEDIA AND RESPONSIVITY STUFF
   }
   .section .inner {
     width: 65%;
+    max-width: 900px;
     margin: auto;
   }
 }

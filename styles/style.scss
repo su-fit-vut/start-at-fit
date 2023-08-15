@@ -66,7 +66,7 @@ a {
     color: inherit;
 }
 
-button {
+button, .button {
     background: none;
     color: inherit;
     border: 2px solid;
@@ -135,7 +135,7 @@ NAVIGATION
 
 nav {
     background: $su-primary;
-    color: $su-black;
+    color: $su-white;
     
     display: flex;
     justify-content: space-between;
@@ -161,7 +161,7 @@ nav {
         text-transform: uppercase;
 
         svg {
-            fill: $su-black;
+            fill: $su-white;
             max-height: 100%;
             width: auto;
         }
@@ -174,7 +174,7 @@ nav {
 
         i {
             font-size: 1.5rem;
-            color: $su-black;
+            color: $su-white;
         }
     }
 
@@ -206,14 +206,28 @@ nav {
     top: 0;
     z-index: 50;
     background-color: $su-primary; 
-    overflow-x: hidden;
+    // overflow-x: hidden;
     transition: 0.5s;
     color: $su-white;
     text-shadow: 2px 2px 3px $su-shadow;
 
+    font-family: $title-font;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    hr {
+        width: 40%;
+        margin: 1rem auto;
+    }
+
     .menu-content {
         margin: auto;
         margin-top: 10%;
+    }
+
+    li {
+        padding: 0.5rem 0;
     }
 
     a {
@@ -223,6 +237,19 @@ nav {
             opacity: 0.85;
         }
     }
+
+    animation: slideMenu 0.5s ease-in-out;
+}
+
+@keyframes slideMenu {
+    0% {
+        height: 0%;
+        opacity: 0;
+    }
+    100% {
+        height: 100%;
+        opacity: 1;
+    }
 }
 
 /**
@@ -231,6 +258,12 @@ PAGE CONTENT
 
 header {
     padding: 7.5rem 0 !important;
+
+    .tagline {
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+    
 }
 
 .top-margin {
@@ -354,7 +387,7 @@ MEDIA AND RESPONSIVITY STUFF
     }
 
     .section {
-        padding: 4.5rem 2.5rem;
+        padding: 3.5rem 2.5rem;
         
         * {
             flex: 100%;
@@ -368,6 +401,7 @@ MEDIA AND RESPONSIVITY STUFF
     
         .inner {
             width: 65%;
+            max-width: 900px;
             margin: auto;
         }
     }
