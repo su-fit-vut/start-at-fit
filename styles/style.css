@@ -48,6 +48,7 @@ button, .button {
   border-radius: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 button:hover, button:active, .button:hover, .button:active {
   opacity: 0.85;
@@ -78,6 +79,10 @@ table td:nth-of-type(3)::after {
 
 .hidden {
   display: none;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 /**
@@ -122,6 +127,7 @@ NAVIGATION
 nav {
   background: hsl(14, 90%, 57%);
   color: #fafafa;
+  border-bottom: 1px solid;
   display: flex;
   justify-content: space-between;
   height: 3.75rem;
@@ -263,6 +269,14 @@ header .tagline {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+.section .day-title {
+  display: flex;
+  justify-content: space-between;
+}
+.section .day-title a:hover, .section .day-title a:active {
+  opacity: 0.85;
+  cursor: pointer;
 }
 
 .highlight {

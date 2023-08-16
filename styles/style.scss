@@ -75,6 +75,7 @@ button, .button {
     border-radius: 1rem;
     font-weight: 600;
     letter-spacing: 1px;
+    text-decoration: none;
 
     &:hover, &:active {
         opacity: 0.85;
@@ -114,6 +115,10 @@ table {
     display: none;
 }
 
+.invisible {
+    visibility: hidden;
+}
+
 /**
 HEADERS
 **/
@@ -137,6 +142,7 @@ NAVIGATION
 nav {
     background: $su-primary;
     color: $su-white;
+    border-bottom: 1px solid;
     
     display: flex;
     justify-content: space-between;
@@ -306,6 +312,16 @@ header {
             list-style-type: none;
             padding: 0;
             margin: 0;
+        }
+    }
+
+    .day-title {
+        display: flex;
+        justify-content: space-between;
+
+        a:hover, a:active {
+            opacity: 0.85;
+            cursor: pointer;
         }
     }
 }
