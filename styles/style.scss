@@ -1,5 +1,6 @@
 $font: 'Dosis', sans-serif;
 $title-font: 'Tomorrow', sans-serif;
+$start-fest-font: 'IBM Plex Mono', monospace;
 $su-primary: hsl(14, 90%, 57%);
 $su-black: #222222;
 $su-white: #fafafa;
@@ -149,7 +150,6 @@ nav {
 
     z-index: 100;
 
-
     a {
         text-decoration: none;
         color: inherit;
@@ -261,7 +261,8 @@ header {
 
     .tagline {
         font-size: 1.3rem;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
+        padding: 0 0.5rem;
     }
     
 }
@@ -319,6 +320,11 @@ header {
     scroll-margin: 4.75rem;
 }
 
+.start-fest-title {
+    font-family: $start-fest-font;
+    font-size: 0.9em;
+    font-weight: 500;
+}
 
 /*
 GALLERY

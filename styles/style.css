@@ -223,7 +223,8 @@ header {
 }
 header .tagline {
   font-size: 1.3rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  padding: 0 0.5rem;
 }
 
 .top-margin {
@@ -272,6 +273,12 @@ header .tagline {
 
 #Program {
   scroll-margin: 4.75rem;
+}
+
+.start-fest-title {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
 /*
