@@ -1,0 +1,39 @@
+.start-fest h1 {
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 3rem;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  text-transform: lowercase;
+}
+.start-fest h2 {
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 2.1rem;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  text-transform: lowercase;
+}
+.start-fest h3 {
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.5rem;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  text-transform: lowercase;
+}
+.start-fest .highlight {
+  background: #1b314f;
+}
+
+header.start-fest {
+  background: #1b314f;
+  background-image: none;
+  color: #fafafa;
+  text-shadow: 2px 2px 3px rgba(6, 8, 12, 0.2);
+}
+
+/*# sourceMappingURL=start-fest.css.map */

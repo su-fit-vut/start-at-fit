@@ -1,0 +1,44 @@
+$font: 'Dosis', sans-serif;
+$start-fest-font: 'IBM Plex Mono', monospace;
+$su-primary: #1b314f;
+$su-black: #06080c;
+$su-white: #fafafa;
+$su-shadow: adjust-color($color: $su-black, $alpha: -0.8);
+
+@mixin title($size) {
+    text-align: center;
+    font-family: $start-fest-font;
+    font-size: $size;
+
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    margin: 0;
+
+    text-transform: lowercase;
+}
+
+.start-fest {
+    
+    h1 {
+        @include title(3rem);
+    }
+    
+    h2 {
+        @include title(2.1rem);
+    }
+    
+    h3 {
+        @include title(1.5rem);
+    }
+
+    .highlight {
+        background: $su-primary;
+    }
+}
+
+header.start-fest {
+    background: $su-primary;
+    background-image: none;
+    color: $su-white;
+    text-shadow:  2px 2px 3px $su-shadow;
+}

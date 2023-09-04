@@ -263,9 +263,9 @@ PAGE CONTENT
 **/
 
 header {
-    padding: 7.5rem 0 !important;
+    padding: 7.5rem 0;
     background-color: $su-shadow;
-    background-image: url("../img/background.png") !important;
+    background-image: url("../img/background.png");
     background-blend-mode: overlay;
     color: $su-white;
     

@@ -225,9 +225,9 @@ nav ul li {
 PAGE CONTENT
 **/
 header {
-  padding: 7.5rem 0 !important;
+  padding: 7.5rem 0;
   background-color: rgba(6, 8, 12, 0.2);
-  background-image: url("../img/background.png") !important;
+  background-image: url("../img/background.png");
   background-blend-mode: overlay;
   color: #fafafa;
   text-shadow: 2px 2px 3px rgba(6, 8, 12, 0.2);
