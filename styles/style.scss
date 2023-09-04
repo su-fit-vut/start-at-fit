@@ -1,8 +1,8 @@
 $font: 'Dosis', sans-serif;
 $title-font: 'Tomorrow', sans-serif;
 $start-fest-font: 'IBM Plex Mono', monospace;
-$su-primary: hsl(14, 90%, 57%);
-$su-black: #222222;
+$su-primary: #226495;
+$su-black: #06080c;
 $su-white: #fafafa;
 $su-shadow: adjust-color($color: $su-black, $alpha: -0.8);
 
@@ -264,11 +264,21 @@ PAGE CONTENT
 
 header {
     padding: 7.5rem 0 !important;
+    background-color: $su-shadow;
+    background-image: url("../img/background.png") !important;
+    background-blend-mode: overlay;
+    color: $su-white;
+    
+    text-shadow: 2px 2px 3px $su-shadow;
 
     .tagline {
         font-size: 1.3rem;
         margin-top: 2.5rem;
         padding: 0 0.5rem;
+    }
+
+    .logo {
+        margin-bottom: 4rem;
     }
     
 }
