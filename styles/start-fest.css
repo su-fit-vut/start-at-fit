@@ -36,4 +36,12 @@ header.start-fest {
   text-shadow: 2px 2px 3px rgba(6, 8, 12, 0.2);
 }
 
+nav, #menu {
+  background: #1b314f !important;
+}
+
+.start-fest-title {
+  text-transform: initial !important;
+}
+
 /*# sourceMappingURL=start-fest.css.map */
