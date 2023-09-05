@@ -148,7 +148,7 @@ nav .logo {
 }
 nav .logo svg {
   fill: #fafafa;
-  max-height: 100%;
+  max-height: 1.688rem;
   width: auto;
 }
 nav button {
