@@ -23,3 +23,19 @@ const scrollAndToggle = () => {
   toggleNav();
   scrollToProgram();
 }
+
+// code from https://joyofcode.xyz/dark-mode-favicon#using-the-media-attribute
+const faviconEl = document.querySelector('link[rel="icon"]')
+const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+mediaQuery.addEventListener('change', themeChange)
+
+// fire it on page load to select correct favicon
+themeChange(mediaQuery)
+
+function themeChange(event) {
+  if (event.matches) {
+    faviconEl.setAttribute('href', 'img/favicon.png')
+  } else {
+    faviconEl.setAttribute('href', 'img/favicon-light-mode.png')
+  }
+}
