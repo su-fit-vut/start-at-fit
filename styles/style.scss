@@ -245,6 +245,17 @@ nav {
     }
 
     animation: slideMenu 0.5s ease-in-out;
+
+    .small {
+        font-family: $font;
+        text-transform: none;
+        font-size: 1rem;
+        font-weight: 400;
+
+        a {
+            text-decoration: underline;
+        }
+    }
 }
 
 @keyframes slideMenu {

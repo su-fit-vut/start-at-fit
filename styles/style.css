@@ -210,6 +210,15 @@ nav ul li {
 #menu a:hover {
   opacity: 0.85;
 }
+#menu .small {
+  font-family: "Dosis", sans-serif;
+  text-transform: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#menu .small a {
+  text-decoration: underline;
+}
 
 @keyframes slideMenu {
   0% {
