@@ -13,7 +13,6 @@ const toggleNav = () => {
 
 const scrollToProgram = () => {
   const program = document.getElementById("Program");
-  console.log(program);
   program.scrollIntoView({ behavior: "smooth"} );
 }
 
@@ -35,5 +34,20 @@ function themeChange(event) {
     faviconEl.setAttribute('href', 'img/favicon.png');
   } else {
     faviconEl.setAttribute('href', 'img/favicon-light-mode.png');
+  }
+}
+
+const togglePlace = (index) => {
+  const expandable = document.getElementsByClassName("expandable")[index];
+  const toggle = expandable.childNodes[1].childNodes[1].childNodes[1];
+  const body = expandable.childNodes[3];
+
+  if (body.getAttribute("class") === "body") {
+    body.setAttribute("class", "body hidden");
+    toggle.setAttribute("class", "fa-solid fa-angles-right");
+  } else {
+    body.setAttribute("class", "body");
+    toggle.setAttribute("class", "fa-solid fa-angles-down");
+
   }
 }

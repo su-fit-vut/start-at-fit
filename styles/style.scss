@@ -42,7 +42,7 @@ img {
     height: auto;
 }
 
-ul {
+ul, ol {
     li {
         line-height: 2rem;
 
@@ -92,7 +92,7 @@ button, .button {
     
 }
 
-table {
+table.program {
     td {
         padding: 0.25rem 0.5rem;
 
@@ -245,6 +245,17 @@ nav {
     }
 
     animation: slideMenu 0.5s ease-in-out;
+
+    .small {
+        font-family: $font;
+        text-transform: none;
+        font-size: 1rem;
+        font-weight: 400;
+
+        a {
+            text-decoration: underline;
+        }
+    }
 }
 
 @keyframes slideMenu {
@@ -356,6 +367,19 @@ header {
 .font-mono {
     font-family: $start-fest-font;
     font-weight: 400;
+}
+
+.expandable {
+    button {
+        border: none;
+        padding-left: 0;
+        width: 100%;
+        text-align: left;
+
+        &:active {
+            box-shadow: none;
+        }
+    }
 }
 
 /*
