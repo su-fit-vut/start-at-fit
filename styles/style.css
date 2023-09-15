@@ -328,6 +328,17 @@ header .logo {
   box-shadow: none;
 }
 
+.linkButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.linkButtons a {
+  flex: none !important;
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
 /*
 GALLERY
 */
@@ -394,6 +405,11 @@ MEDIA AND RESPONSIVITY STUFF
     width: 65%;
     max-width: 900px;
     margin: auto;
+  }
+  .linkButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
