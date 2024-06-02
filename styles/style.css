@@ -99,7 +99,7 @@ HEADERS
 **/
 h1 {
   text-align: center;
-  font-family: "Kode Mono", monospace;
+  font-family: "Tomorrow", sans-serif;
   font-size: 3rem;
   letter-spacing: 1px;
   padding-top: 0rem;
@@ -110,7 +110,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-family: "Kode Mono", monospace;
+  font-family: "Tomorrow", sans-serif;
   font-size: 2.1rem;
   letter-spacing: 1px;
   padding-top: 0rem;
@@ -121,7 +121,7 @@ h2 {
 
 h3 {
   text-align: center;
-  font-family: "Kode Mono", monospace;
+  font-family: "Tomorrow", sans-serif;
   font-size: 1.5rem;
   letter-spacing: 1px;
   padding-top: 0rem;
@@ -152,7 +152,7 @@ nav a {
 }
 nav .logo {
   font-weight: 600;
-  font-family: "Kode Mono", monospace;
+  font-family: "Tomorrow", sans-serif;
   text-transform: uppercase;
 }
 nav .logo a {
@@ -168,7 +168,7 @@ nav .logo a svg {
 }
 nav .logo a h1 {
   text-align: center;
-  font-family: "Kode Mono", monospace;
+  font-family: "Tomorrow", sans-serif;
   font-size: 1rem;
   letter-spacing: 1px;
   padding-top: 0rem;
@@ -214,7 +214,7 @@ nav ul li {
   transition: 0.5s;
   color: #fafafa;
   text-shadow: 2px 2px 3px rgba(14, 19, 18, 0.25);
-  font-family: "Kode Mono", monospace;
+  font-family: "Tomorrow", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.5rem;
