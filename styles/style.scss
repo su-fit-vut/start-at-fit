@@ -1,12 +1,12 @@
 $font: "Dosis", sans-serif;
-$title-font: "Tomorrow", sans-serif;
+$title-font: "Kode Mono", monospace;
 $start-fest-font: "IBM Plex Mono", monospace;
-$su-primary: #226495;
-$su-black: #06080c;
+$su-primary: #2596be;
+$su-black: #0e1312;
 $su-white: #fafafa;
 $su-shadow: adjust-color(
   $color: $su-black,
-  $alpha: -0.8,
+  $alpha: -0.75,
 );
 
 @mixin title($size) {
@@ -147,7 +147,7 @@ NAVIGATION
 nav {
   background: $su-primary;
   color: $su-white;
-  border-bottom: 1px solid;
+  box-shadow: 0px 1px 4px $su-shadow;
 
   display: flex;
   justify-content: space-between;
@@ -186,7 +186,7 @@ nav {
       h1 {
         @include title(1rem);
         display: block;
-        padding: none;
+        padding: 0;
       }
     }
   }
@@ -292,7 +292,9 @@ PAGE CONTENT
 header {
   padding: 7.5rem 0;
   background-color: $su-shadow;
-  background-image: url("../img/background.png");
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
   background-blend-mode: overlay;
   color: $su-white;
 
@@ -428,6 +430,23 @@ GALLERY
     width: 100%;
     flex: 100%;
     flex-wrap: wrap;
+  }
+}
+
+footer {
+  padding: 1rem;
+
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    a {
+      display: block;
+      text-decoration: none;
+    }
   }
 }
 

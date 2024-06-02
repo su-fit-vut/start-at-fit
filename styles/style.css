@@ -10,7 +10,7 @@ body {
   padding: 0;
   font-family: "Dosis", sans-serif;
   background: #fafafa;
-  color: #06080c;
+  color: #0e1312;
   font-size: 1rem;
 }
 
@@ -99,7 +99,7 @@ HEADERS
 **/
 h1 {
   text-align: center;
-  font-family: "Tomorrow", sans-serif;
+  font-family: "Kode Mono", monospace;
   font-size: 3rem;
   letter-spacing: 1px;
   padding-top: 0rem;
@@ -110,7 +110,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-family: "Tomorrow", sans-serif;
+  font-family: "Kode Mono", monospace;
   font-size: 2.1rem;
   letter-spacing: 1px;
   padding-top: 0rem;
@@ -121,7 +121,7 @@ h2 {
 
 h3 {
   text-align: center;
-  font-family: "Tomorrow", sans-serif;
+  font-family: "Kode Mono", monospace;
   font-size: 1.5rem;
   letter-spacing: 1px;
   padding-top: 0rem;
@@ -134,9 +134,9 @@ h3 {
 NAVIGATION
 **/
 nav {
-  background: #226495;
+  background: #2596be;
   color: #fafafa;
-  border-bottom: 1px solid;
+  box-shadow: 0px 1px 4px rgba(14, 19, 18, 0.25);
   display: flex;
   justify-content: space-between;
   height: 3.75rem;
@@ -152,7 +152,7 @@ nav a {
 }
 nav .logo {
   font-weight: 600;
-  font-family: "Tomorrow", sans-serif;
+  font-family: "Kode Mono", monospace;
   text-transform: uppercase;
 }
 nav .logo a {
@@ -168,7 +168,7 @@ nav .logo a svg {
 }
 nav .logo a h1 {
   text-align: center;
-  font-family: "Tomorrow", sans-serif;
+  font-family: "Kode Mono", monospace;
   font-size: 1rem;
   letter-spacing: 1px;
   padding-top: 0rem;
@@ -176,7 +176,7 @@ nav .logo a h1 {
   margin: 0;
   text-transform: uppercase;
   display: block;
-  padding: none;
+  padding: 0;
 }
 nav button {
   background: none;
@@ -188,7 +188,7 @@ nav button i {
   color: #fafafa;
 }
 nav ul {
-  background: #226495;
+  background: #2596be;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -210,11 +210,11 @@ nav ul li {
   left: 0;
   top: 0;
   z-index: 50;
-  background-color: #226495;
+  background-color: #2596be;
   transition: 0.5s;
   color: #fafafa;
-  text-shadow: 2px 2px 3px rgba(6, 8, 12, 0.2);
-  font-family: "Tomorrow", sans-serif;
+  text-shadow: 2px 2px 3px rgba(14, 19, 18, 0.25);
+  font-family: "Kode Mono", monospace;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.5rem;
@@ -262,11 +262,13 @@ PAGE CONTENT
 **/
 header {
   padding: 7.5rem 0;
-  background-color: rgba(6, 8, 12, 0.2);
-  background-image: url("../img/background.png");
+  background-color: rgba(14, 19, 18, 0.25);
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
   background-blend-mode: overlay;
   color: #fafafa;
-  text-shadow: 2px 2px 3px rgba(6, 8, 12, 0.2);
+  text-shadow: 2px 2px 3px rgba(14, 19, 18, 0.25);
 }
 header .tagline {
   font-size: 1.3rem;
@@ -326,9 +328,9 @@ header .logo {
 }
 
 .highlight {
-  background: #226495;
+  background: #2596be;
   color: #fafafa;
-  text-shadow: 2px 2px 3px rgba(6, 8, 12, 0.2);
+  text-shadow: 2px 2px 3px rgba(14, 19, 18, 0.25);
 }
 
 #Program {
@@ -383,6 +385,21 @@ GALLERY
   width: 100%;
   flex: 100%;
   flex-wrap: wrap;
+}
+
+footer {
+  padding: 1rem;
+}
+footer .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+footer .socials a {
+  display: block;
+  text-decoration: none;
 }
 
 /**
