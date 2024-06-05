@@ -19,6 +19,10 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: square;
+}
+
 ul li,
 ol li {
   line-height: 2rem;
