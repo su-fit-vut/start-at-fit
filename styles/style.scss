@@ -103,19 +103,13 @@ button,
 
 table.program {
   td {
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 0.75rem;
 
     &:first-of-type {
       font-weight: 600;
     }
     &:nth-of-type(3) {
-      padding-left: 0.5rem;
-      &::before {
-        content: "[";
-      }
-      &::after {
-        content: "]";
-      }
+      padding-left: 1rem;
     }
   }
 }
