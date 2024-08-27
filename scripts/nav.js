@@ -9,17 +9,33 @@ const toggleNav = () => {
     menu.setAttribute("class", "hidden top-margin");
     menuButton.setAttribute("class", "fa-solid fa-bars");
   }
-}
+};
 
 const scrollToProgram = () => {
   const program = document.getElementById("Program");
-  program.scrollIntoView({ behavior: "smooth"} );
-}
+  program.scrollIntoView({ behavior: "smooth" });
+};
 
 const scrollAndToggle = () => {
   toggleNav();
   scrollToProgram();
-}
+};
+
+const toggleProgram = (group, button) => {
+  console.log(button.childNodes[1]);
+  table = document.getElementById(group);
+  if (table.getAttribute("class") === "hidden") {
+    table.setAttribute("class", "");
+    button.setAttribute("class", "expanded");
+
+    button.childNodes[1].setAttribute("class", "fa-solid fa-angles-down");
+  } else {
+    table.setAttribute("class", "hidden");
+    button.setAttribute("class", "");
+    button.childNodes[1].setAttribute("class", "fa-solid fa-angles-right");
+
+  }
+};
 
 // code from https://joyofcode.xyz/dark-mode-favicon#using-the-media-attribute
 const faviconEl = document.querySelector('link[rel="icon"]');
@@ -35,19 +51,4 @@ function themeChange(event) {
   } else {
     faviconEl.setAttribute('href', 'img/favicon-light-mode.png');
   }
-}
-
-const togglePlace = (index) => {
-  const expandable = document.getElementsByClassName("expandable")[index];
-  const toggle = expandable.childNodes[1].childNodes[1].childNodes[1];
-  const body = expandable.childNodes[3];
-
-  if (body.getAttribute("class") === "body") {
-    body.setAttribute("class", "body hidden");
-    toggle.setAttribute("class", "fa-solid fa-angles-right");
-  } else {
-    body.setAttribute("class", "body");
-    toggle.setAttribute("class", "fa-solid fa-angles-down");
-
-  }
-}
+};
