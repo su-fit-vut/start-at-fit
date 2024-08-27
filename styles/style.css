@@ -75,19 +75,13 @@ button:active#menuButton,
 }
 
 table.program td {
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 0.75rem;
 }
 table.program td:first-of-type {
   font-weight: 600;
 }
 table.program td:nth-of-type(3) {
-  padding-left: 0.5rem;
-}
-table.program td:nth-of-type(3)::before {
-  content: "[";
-}
-table.program td:nth-of-type(3)::after {
-  content: "]";
+  padding-left: 1rem;
 }
 
 .hidden {
