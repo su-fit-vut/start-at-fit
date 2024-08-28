@@ -99,9 +99,19 @@ button,
       box-shadow: none;
     }
   }
+
+  &.expanded {
+    border-bottom-left-radius: 0;
+    border-bottom: none;
+    border-right: none;
+    border-top-right-radius: 0;
+    transition: all ease-out 0.2s;
+  }
+  transition: all ease-out 0.2s;
 }
 
 table.program {
+  transition: all ease-in 0.2s;
   td {
     padding: 0.5rem 0.75rem;
 
@@ -322,7 +332,7 @@ header {
   padding: 2rem 1rem;
 
   .program {
-    border-left: 3px solid;
+    border-left: 2px solid;
   }
 
   .day {

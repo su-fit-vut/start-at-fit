@@ -58,6 +58,7 @@ button,
   font-weight: 600;
   letter-spacing: 1px;
   text-decoration: none;
+  transition: all ease-out 0.2s;
 }
 button:hover, button:active,
 .button:hover,
@@ -73,7 +74,18 @@ button:active#menuButton,
 .button:active#menuButton {
   box-shadow: none;
 }
+button.expanded,
+.button.expanded {
+  border-bottom-left-radius: 0;
+  border-bottom: none;
+  border-right: none;
+  border-top-right-radius: 0;
+  transition: all ease-out 0.2s;
+}
 
+table.program {
+  transition: all ease-in 0.2s;
+}
 table.program td {
   padding: 0.5rem 0.75rem;
 }
@@ -290,7 +302,7 @@ header .logo {
   padding: 2rem 1rem;
 }
 .section .program {
-  border-left: 3px solid;
+  border-left: 2px solid;
 }
 .section .day {
   padding: 1rem;
