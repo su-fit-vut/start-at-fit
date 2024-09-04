@@ -137,7 +137,7 @@ HEADERS
 **/
 
 h1 {
-  @include title(3rem);
+  @include title(2.1rem);
 }
 
 h2 {
@@ -461,6 +461,12 @@ footer {
 /**
 MEDIA AND RESPONSIVITY STUFF
 **/
+
+@media screen and (min-width: 505px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 
 @media screen and (min-width: 965px) {
   body {
