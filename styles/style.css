@@ -323,9 +323,9 @@ header .logo {
 }
 .section .day ul,
 .section .day li {
-  list-style-type: none;
+  list-style-type: square;
+  margin-left: 12px;
   padding: 0;
-  margin: 0;
 }
 .section .day-title {
   display: flex;
