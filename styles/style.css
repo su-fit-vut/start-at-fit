@@ -470,7 +470,10 @@ MEDIA AND RESPONSIVITY STUFF
   .linkButtons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .linkButtons .button {
+    margin: 0 0.5rem;
   }
 }
 
