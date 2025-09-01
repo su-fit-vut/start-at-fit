@@ -100,15 +100,18 @@
     <div id="menu" class="hidden top-margin">
       <div class="menu-content">
         <ul class="centering plain">
-          <a href="/#Program" onclick="toggleNav()"
-            ><li>Přehled programu</li></a
-          >
+          <a href="/#Program" onclick="toggleNav()">
+            <li>Přehled programu</li>
+          </a>
           <hr />
           <a href="ctvrtek"><li>Čtvrtek</li></a>
           <a href="patek"><li>Pátek</li></a>
           <a href="sobota"><li>Sobota</li></a>
           <a href="nedele"><li>Neděle</li></a>
-          <hr>
+          <!--<hr />
+          <a href="photos"><li>Fotografie z&nbsp;minulých let</li></a>-->
+          <hr />
+          <a href="https://prirucka.vut.cz/category/fit"><li>Příručka pro prváky</li></a>
           <a href="https://su.fit.vut.cz/rozcestnik"><li>Rozcestník pro prváky na FIT VUT</li></a>
         </ul>
       </div>
@@ -132,13 +135,13 @@
             <a href="https://su.fit.vut.cz/kachna" target="_blank"
               >U&nbsp;Kachničky</a
             >, místnosti
-            <a href="https://www.fit.vut.cz/fit/map/.cs?show=P108&big=1"
+            <a href="https://www.fit.vut.cz/fit/map/.cs?show=P108&big=1" target="_blank"
               >P108</a
             >
             a&nbsp;přilehlých prostor). Představí se vám taky jedinečné
             <a
-              href="https://prirucka.vut.cz/category/vut/#studentske-organizace-na-vut"
-              >studentské organizace a&nbsp;spolky</a
+              href="https://prirucka.vut.cz/category/vut/#studentske-organizace-na-vut" target="_blank"
+              >studentské organizace, tvůrčí skupiny a&nbsp;spolky</a
             >
             z&nbsp;VUT. K&nbsp;dispozici bude spousta občerstvení.
           </p>
@@ -173,7 +176,8 @@
           
           <p>
             Váš program se bude řídit
-            <b>podle počátečních písmen vašich příjmení</b>:
+            <b>podle počátečních písmen vašich příjmení</b>.<br>Pro některé aktivity vás na místě
+            budeme rozdělovat do místností.
           </p>
 
           <div>
@@ -182,7 +186,7 @@
               id="BITAProgramButton"
             >
               <i class="fa-solid fa-angles-right"></i>
-              Program pro skupinu od <b>A</b> do <b>Lu</b> <!-- TODO: napsat jak odepíše Tesařová -->
+              Program pro skupinu od <b>A</b> do <b>L</b>
             </button>
             <div id="BITAProgram" class="hidden">
               <table class="program">
@@ -200,6 +204,7 @@
                   <td>
                     <i class="fa-solid fa-location-dot"></i>&nbsp;<a
                       href="https://www.fit.vut.cz/fit/map/.cs?show=D105&big=1"
+                      target="_blank"
                       >D105</a
                     >
                   </td>
@@ -215,8 +220,12 @@
                     >&nbsp;Survival školení SU FIT
                   </td>
                   <td>
-                    <i class="fa-solid fa-location-dot"></i>&nbsp;
-                    Místnosti: A112, A113, E105, E104, E112
+                    <i class="fa-solid fa-location-dot"></i>&nbsp;místnosti A112, A113, E105, E104, E112<br>
+                    (rozdělíme vás; pokud přijdete později, běžte do <a
+                      href="https://www.fit.vut.cz/fit/map/1/.cs?show=E112&big=1"
+                      target="_blank"
+                      >E112</a
+                    >)
                   </td>
                 </tr>
                 <tr>
@@ -244,16 +253,14 @@
                   <td>
                     <i class="fa-solid fa-location-dot"></i>&nbsp;<a
                       href="https://www.fit.vut.cz/fit/map/.cs?show=C114&big=1"
-                      >knihovna a chodba vedle</a
-                    >
+                      target="_blank">knihovna</a> (příjmení A–Hon) 
+                      a&nbsp;<a href="https://www.fit.vut.cz/fit/map/.cs?show=C106&big=1" 
+                      target="_blank">chodba před studijním</a> (příjmení Hom–L)
                   </td>
                 </tr>
                 <tr>
                   <td>14:30–16:00</td>
-                  <td>
-                    <i class="fa-regular fa-star" title="Nezmeškejte!"></i
-                    >&nbsp;Pokec s&nbsp;akademiky
-                  </td>
+                  <td>Pokec s&nbsp;akademiky</td>
                   <td>
                     <i class="fa-solid fa-location-dot"></i>&nbsp;nádvoří
                     (v&nbsp;případě deště: klub
@@ -266,13 +273,14 @@
                 </tr>
                 <tr>
                   <td>14:45–15:15</td>
-                  <td>Představení studentských spolků</td>
+                  <td>Představení studentských spolků<br>a tvůrčích skupin</td>
                   <td>
                     <i class="fa-solid fa-location-dot"></i
                     >&nbsp;nádvoří<br />(v&nbsp;případě deště zrušeno, spolky
-                    budou mít své stánky před a&nbsp;uvnitř
-                    <a href="https://www.fit.vut.cz/fit/map/.cs?show=R109&big=1"
-                      >R109</a
+                    budou mít své stánky na chodbě
+                    <a href="https://www.fit.vut.cz/fit/map/.cs?show=C108&big=1"
+                        target="_blank"
+                      >C108</a
                     >)
                   </td>
                 </tr>
@@ -282,6 +290,7 @@
                   <td>
                     <i class="fa-solid fa-location-dot"></i>&nbsp;<a
                       href="https://www.fit.vut.cz/fit/map/2/.cs?show=R212&big=1"
+                      target="_blank"
                       >Studentský klub U Kachničky</a
                     >
                   </td>
@@ -305,7 +314,7 @@
               id="BITBProgramButton"
             >
               <i class="fa-solid fa-angles-right"></i>
-              Program pro skupinu od <b>Ma</b> do <b>Ž</b> <!-- TODO: napsat jak odepíše Tesařová -->
+              Program pro skupinu od <b>M</b> do <b>Ž</b>
             </button>
             <div id="BITBProgram" class="hidden">
               <table class="program">
@@ -315,7 +324,7 @@
                   <th></th>
                 </tr>
                 <tr>
-                  <td>9:30–10:30</td>
+                  <td>9:30–10:40</td>
                   <td>
                     <i class="fa-regular fa-star" title="Nezmeškejte!"></i
                     >&nbsp;Vyzvednutí průkazů ISIC
@@ -323,8 +332,9 @@
                   <td>
                     <i class="fa-solid fa-location-dot"></i>&nbsp;<a
                       href="https://www.fit.vut.cz/fit/map/.cs?show=C114&big=1"
-                      >knihovna + chodba</a
-                    >
+                      target="_blank">knihovna</a> (příjmení M–Sof) 
+                      a&nbsp;<a href="https://www.fit.vut.cz/fit/map/.cs?show=C106&big=1" 
+                      target="_blank">chodba před studijním</a> (příjmení Sog–Ž)
                   </td>
                 </tr>
                 <tr>
@@ -336,6 +346,7 @@
                   <td>
                     <i class="fa-solid fa-location-dot"></i>&nbsp;<a
                       href="https://www.fit.vut.cz/fit/map/.cs?show=D105&big=1"
+                      target="_blank"
                       >D105</a
                     >
                   </td>
@@ -351,26 +362,30 @@
                     >&nbsp;Survival školení SU FIT
                   </td>
                   <td>
-                    <i class="fa-solid fa-location-dot"></i>&nbsp;různé
-                    místnosti, rozdělíme vás na místě
+                    <i class="fa-solid fa-location-dot"></i>&nbsp;místnosti A112, A113, E105, E104, E112<br>
+                    (rozdělíme vás; pokud přijdete později, běžte do <a
+                      href="https://www.fit.vut.cz/fit/map/1/.cs?show=E112&big=1"
+                      target="_blank"
+                      >E112</a
+                    >)
                   </td>
                 </tr>
                 <tr>
-                  <td><span style="font-weight: normal">13:00–15:30</span></td>
+                  <td><span style="font-weight: normal">14:30–15:30</span></td>
                   <td><i>(Vyzvednutí průkazů ISIC)</i></td>
                   <td>
                     <i class="fa-solid fa-location-dot"></i>&nbsp;<a
                       href="https://www.fit.vut.cz/fit/map/.cs?show=C114&big=1"
-                      >knihovna + chodba</a
-                    >
+                      target="_blank"
+                      >knihovna + chodba před studijním</a
+                    ><br>
                     <i
-                      >(pokud je to možné, přijďte si pro ISIC raději
-                      dopoledne)</i
+                      >(jen ve výjimečných případech – přijďte si pro ISIC dopoledne!)</i
                     >
                   </td>
                 </tr>
                 <tr>
-                  <td>14:30–22:00</td>
+                  <td>14:30–21:00</td>
                   <td>
                     Chillzóna na nádvoří a další
                     <a href="#Activities">aktivity</a>
@@ -388,8 +403,7 @@
                 <tr>
                   <td>14:30–16:00</td>
                   <td>
-                    <i class="fa-regular fa-star" title="Nezmeškejte!"></i
-                    >&nbsp;Pokec s&nbsp;akademiky
+                    Pokec s&nbsp;akademiky
                   </td>
                   <td>
                     <i class="fa-solid fa-location-dot"></i>&nbsp;nádvoří
@@ -403,13 +417,14 @@
                 </tr>
                 <tr>
                   <td>14:45–15:15</td>
-                  <td>Představení studentských spolků</td>
+                  <td>Představení studentských spolků<br>a tvůrčích skupin</td>
                   <td>
                     <i class="fa-solid fa-location-dot"></i
                     >&nbsp;nádvoří<br />(v&nbsp;případě deště zrušeno, spolky
-                    budou mít své stánky před a&nbsp;uvnitř
-                    <a href="https://www.fit.vut.cz/fit/map/.cs?show=R109&big=1"
-                      >R109</a
+                    budou mít své stánky na chodbě
+                    <a href="https://www.fit.vut.cz/fit/map/.cs?show=C108&big=1"
+                        target="_blank"
+                      >C108</a
                     >)
                   </td>
                 </tr>
@@ -419,6 +434,7 @@
                   <td>
                     <i class="fa-solid fa-location-dot"></i>&nbsp;<a
                       href="https://www.fit.vut.cz/fit/map/2/.cs?show=R212&big=1"
+                      target="_blank"
                       >Studentský klub U Kachničky</a
                     >
                   </td>
@@ -453,7 +469,7 @@
             <li>
               <b>Prohlídky podzemí fakulty</b> (sraz před
               <a href="https://www.fit.vut.cz/fit/map/.cs?show=A108&big=1"
-                >A108</a
+                target="_blank">A108</a
               >, 13:00–15:59)
             </li>
             <ul>
@@ -463,18 +479,15 @@
               </li>
               <li>máte jedinečnou možnost se do kousku z&nbsp;nich podívat</li>
               <li>
-                prohlídka má cca 20 minut, <b>registraci termínů</b> najdete
-                <a
-                  href="https://doodle.com/sign-up-sheet/participate/37f4903c-f6f2-4ead-aad3-42fb0714053e/select"
-                  >zde</a
-                >, spuštěna bude <b>ve čtvrtek 12. září/septembra ráno</b> – vše
-                se dozvíte v úvodu programu
+                prohlídka má cca 20 minut, <b>registraci termínů</b> najdete na tomto webu
+                <b>ve čtvrtek 11. září/septembra ráno</b> – vše
+                se dozvíte v úvodu programu!
               </li>
             </ul>
             <li>
               <b>Speedfriendings</b> (<a
                 href="https://www.fit.vut.cz/fit/map/.cs?show=C126&big=1"
-                >C126</a
+                target="_blank">C126</a
               >, 13:00–16:59)
             </li>
             <ul>
@@ -485,11 +498,11 @@
               <li>
                 přijďte každou celou hodinu do studovny
                 <a href="https://www.fit.vut.cz/fit/map/.cs?show=C126&big=1"
-                  >C126</a
+                  target="_blank">C126</a
                 >
                 skrz
                 <a href="https://www.fit.vut.cz/fit/map/.cs?show=C133&big=1"
-                  >vchod B</a
+                  target="_blank">vchod B</a
                 >
               </li>
               <li>žádná registrace předem není třeba</li>
@@ -499,16 +512,10 @@
           <hr />
           <ul>
             <li>
-              <b>Lovení kachniček</b> (<a
-                href="https://www.fit.vut.cz/fit/map/.cs?show=P101&big=1"
-                ><!--TODO: Místnost--></a
-              >, 12:30–19:59)
+              <b>Lovení kachniček</b> (nádvoří, 12:30–17:59)
             </li>
             <li>
-              <b>Debugování fakulty</b> (<a
-                href="https://www.fit.vut.cz/fit/map/.cs?show=P101&big=1"
-                ><!--TODO: Místnost--></a
-              >, 12:30–19:59)
+              <b>Debugování fakulty</b> (po celé fakultě, 12:30–17:59)
             </li>
             <ul>
               <li>
@@ -517,20 +524,14 @@
               </li>
             </ul>
             <li>
-              <b>Skládání klávesnic</b> (<a
-                href="https://www.fit.vut.cz/fit/map/.cs?show=G104&big=1"
-                ><!--TODO: Místnost--></a
-              >, 12:30–19:59)
+              <b>Skládání klávesnic</b> (nádvoří, 12:30–19:59)
             </li>
             <ul>
               <li>jak rychle zvládnete dát dohromady klávesnici?</li>
               <li>a&nbsp;jak rychle to zvládnete z&nbsp;hlavy?</li>
             </ul>
             <li>
-              <b>Pixel art</b> (<a
-                href="https://www.fit.vut.cz/fit/map/2/.cs?show=S207&big=1"
-                ><!--TODO: Místnost--></a
-              >, 12:30–19:59)
+              <b>Pixel art</b> (nádvoří, 12:30–19:59)
             </li>
             <ul>
               <li>
@@ -539,27 +540,15 @@
               <li>vrcholná umění budou navždy vystavena v&nbsp;Kachně</li>
             </ul>
           </ul>
-
-          <p>
+          <!--<p>
             Počítáme se špatným počasím, aktivity jsou proto naplánovány do
             různých míst po fakultě (aspoň si ji projdete).<br />
             Stánky některých spolků z&nbsp;VUT najdete ve FIT Open Space (<a
               href="https://www.fit.vut.cz/fit/map/.cs?show=R109&big=1"
               >R109</a
             >).
-          </p></div>
-      </div>
-
-      <div class="section" style="width: 100%;">
-        <div class="inner">
-          <div class="photo">
-              <img loading="lazy" src="img/photos/2025/skoleni-1.jpg" />
-          </div>
+          </p>-->
         </div>
-      </div>
-
-      <div class="section highlight">
-
       </div>
 
       <div class="section">
@@ -568,6 +557,14 @@
             <a href="patek" class="button"
               >Pátek <i class="fa-solid fa-arrow-right"></i
             ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" style="padding-top: 0;">
+        <div class="inner">
+          <div class="photo">
+              <img loading="lazy" src="img/photos/2025/skoleni-1.jpg" />
           </div>
         </div>
       </div>
