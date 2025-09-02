@@ -278,7 +278,7 @@ PAGE CONTENT
 header {
   padding: 7.5rem 0;
   background-color: rgba(14, 19, 18, 0.25);
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background.jpg?v=2025");
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
