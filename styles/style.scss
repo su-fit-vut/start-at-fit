@@ -65,6 +65,13 @@ ol {
       list-style: none;
     }
   }
+
+  &.tour-pubs {
+    i {
+      margin-right: 0;
+      margin-left: 0.25rem;
+    }
+  }
 }
 
 .b {
@@ -326,6 +333,10 @@ header {
 .centering {
   text-align: center;
   margin: auto;
+}
+
+.justify {
+  text-align: justify;
 }
 
 .section {
