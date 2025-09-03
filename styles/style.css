@@ -389,6 +389,11 @@ header .logo {
   margin: 0.5rem 0;
 }
 
+.button-list .button {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
 /*
 GALLERY
 */
